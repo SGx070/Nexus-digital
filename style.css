@@ -161,3 +161,39 @@ footer {
 .faq-item.active .faq-question span {
     transform: rotate(45deg);
 }
+
+/* Contact Section */
+.contact-section { padding: 80px 5%; }
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.contact-form { display: flex; flex-direction: column; gap: 15px; }
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.info-item { margin-top: 20px; font-weight: bold; color: var(--primary); }
+
+/* Reviews Section */
+.reviews-section { padding: 80px 5%; text-align: center; background: #f8fafc; }
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--primary);
+}
+.stars { margin-bottom: 15px; }
+.review-card p { font-style: italic; color: #475569; margin-bottom: 15px; }
