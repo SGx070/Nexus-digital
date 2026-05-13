@@ -80,19 +80,7 @@ nav ul li a:hover { color: var(--primary); }
     box-shadow: 0 0 20px rgba(0, 173, 181, 0.4);
 }
 
-/* Portfolio & Review Cards */
-.portfolio-card, .review-card, .service-box {
-    background: var(--bg-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    color: var(--text-main);
-    transition: transform 0.3s, border-color 0.3s;
-}
 
-.portfolio-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--primary);
-}
 
 .card-content h3, .service-box h3 { color: var(--primary); }
 .card-content p, .review-card p { color: var(--text-dim); }
@@ -133,4 +121,30 @@ footer {
 
 .faq-question:hover {
     background: rgba(0, 173, 181, 0.1); /* Subtle teal glow on hover */
+}
+
+/* Ensure these names match the HTML exactly */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.portfolio-card {
+    background: var(--bg-card); /* Make sure this variable is in your :root */
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 20px;
 }
